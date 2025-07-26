@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*box-sizing ---------------------*/
+.box-sizing{
+    background-color: purple;
+    height: 700px;
+    width: 700px;
+    margin: auto;
+    margin-bottom: 60px;
+    
+    /* Center with Flex -----> */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    /* Center with grid ----->  */ 
+
+    /* display: grid;
+    place-content: center; */
+    
+}
+.content-box{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    box-sizing: content-box;
+    padding: 80px;
+}
+.border-box{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 80px;
+}
+
+/* Normally default-wise we use border box because it takes the padding inside unlike content-box which takes it outside. */
+
+/* postion with z-index --------------------*/
+
+.flag-green{
+    width: 500px;
+    height: 300px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.flag-rounded-red{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50% , -50%);
+    z-index: 3;
+}
+.flag-rounded-white{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 2;
+}
