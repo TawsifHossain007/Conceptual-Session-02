@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/02c337aac3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tailwind</title>
+        <style>
+      nav{
+  background-color: black;
+  padding: 15px 0;
+  font-weight: 600;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+nav ul a{
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+nav ul a:hover{
+  color: red;
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+        <ul>
+          <li><a href="./index.html">Main html</a></li>
+          <li><a href="./practice.html">Practice</a></li>
+        </ul>
+      </nav>
+
+    <!-- Tailwind Card -->
+    <div class="shadow w-[360px] m-auto mt-[50px]">
+      <img src="assets/img/matches/matches_5.webp" alt="" />
+      <div class="p-5">
+        <button class="border border-slate-300 px-3 py-1.5 rounded-lg">Transfer</button>
+        <h2 class="font-bold text-[18px] my-[15px]">
+          Transfer Live: Chlesea in talks over Kimpenbe transfer
+        </h2>
+        <div class="text-slate-700 flex gap-1">
+          <span><i class="fa-solid fa-clock"></i> 10h</span>
+          <span><i class="fa-solid fa-message"></i> 23</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

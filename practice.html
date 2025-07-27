@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./practice.css" />
     <title>Practice</title>
+    <style>
+      nav{
+  background-color: black;
+  padding: 15px 0;
+  font-weight: 600;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+nav ul a{
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+nav ul a:hover{
+  color: red;
+}
+    </style>
+
+    
   </head>
   <body>
+    <nav>
+        <ul>
+          <li><a href="./index.html">Main html</a></li>
+          <li><a href="./index-tw.html">Tailwind</a></li>
+        </ul>
+      </nav>
+
     <h3>Box-Sizing</h3>
     <div class="box-sizing">
       <div class="content-box"></div>
