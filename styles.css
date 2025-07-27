@@ -11,7 +11,9 @@
     max-width: 1280px;
     margin: auto;
 }
-
+img{
+    max-width: 100%;
+}
 .btn-primary{
     padding: 15px 25px;
     background-color: red;
@@ -43,6 +45,10 @@
 }
 .banner-left{
     padding: 55px;
+    flex: 1;
+}
+.banner-right{
+    flex: 1;
 }
 
 .banner-right img{
@@ -74,6 +80,9 @@
 }
 .upcoming-matches-right{
     flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
 }
 
 .upcoming-matches-right .card{
@@ -106,8 +115,47 @@
     padding: 20px;
 }
 
+@media screen and (max-width:992px){
+    .upcoming-matches{
+        flex-direction: column;
+    }
+    .upcoming-matches-left{
+        flex-direction: row;
+        width: 100%;
+        background-color: transparent;
+    }
+    .upcoming-matches-left > *{
+        flex: 1;
+    }
+    .upcoming-matches-left .btn-primary{
+        border: 1px solid #E8E8E8 ;
+    }
+    .upcoming-matches-right{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .banner h3{
+    line-height: 52px;
+    font-size: 52px;
+}
+}
 
 
+@media screen and (max-width:576px){
+    .banner{
+        flex-direction: column;
+        text-align: center;
+        padding-left: 5%;
+    }
+    .banner .banner-left{
+        margin-bottom: 50px;
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+    .banner .banner-left p{
+        /* max-width: 100%; */
+        margin: auto;
+    }
+}
 
 
 
